@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    .body{
+      background-color: #F0F1EC;
+    }
+    .container{
+      display: grid;
+      height: 748px;
+      width: 748px;
+      display: grid;
+      background-color: #000;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 22px;
+      gap: 9px;
+    }
+
+    .six{
+      background-color: #E72F24;
+    }
+    .white{
+      background-color: #F0F1EC;
+    }
+    .one{
+      background-color: #F0F1EC;
+      grid-column:2/5 ;
+    }
+    .two{
+      background-color: #F0F1EC;
+      grid-row:2/4;
+    }
+    .three{
+      background-color: #F0F1EC;
+      grid-area: 2/2/4/4;
+    }
+    .blue{
+      background-color: #004592;
+      border-bottom: 10px solid #000;
+    }
+    .four{
+      background-color: #F0F1EC;
+      grid-row:3/5 ;
+    }
+    .yellow{
+      background-color: #F9D01E;
+    }
+    .black{
+      background-color: #000;
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+   <div class="container">
+    <div class="six red "> </div>
+    <div class="six white one"> </div>
+    <div class="six white two"> </div>
+    <div class="six white three"> </div>
+    <div class="six blue"> </div>
+    <div class="six white four"> </div>
+    <div class="six white"> </div>
+    <div class="six yellow"> </div>
+    <div class="six black"> </div>
+   </div>
+</body>
+
+</html>
